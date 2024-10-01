@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora fuder?</title>
+
+    <style>
+        .sexo{
+            position: absolute;
+            width: 200px;
+            height: 150px;
+            top: 50%;
+            left: 50%;
+            border: 5px solid red;
+            box-shadow: 0 0 0 10;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);   
+            background-color: white;     
+        }
+    </style>
+</head>
+<body id="sexo" style="background-image: url(lobo.jpg);">
+
+    <div class="sexo" id="nopelo">
+        <p>Bora fuder?</p>
+        <div style="display: flex; justify-content: space-around;">
+            <button onmouseenter="borabill()" onmouseleave="tomarnocu()">
+                <a href="https://www.youtube.com/watch?v=qOu4pn_B1HM"> MUITO </a>
+            </button>
+            <button onmouseenter="nuncadiganao()">não...</button>
+        </div>
+    </div>
+    
+
+    <script>
+        function nuncadiganao(){
+            const altura = Math.random() * 80;
+            const largunta = Math.random() * 80;
+            const element = document.getElementById("nopelo");
+            element.style.top = altura + "%"
+            element.style.left = largunta + "%"
+        }
+        function borabill(){
+            document.body.style.backgroundImage = "url('/gif/lights-fireworks.gif')"
+        }
+        function tomarnocu(){
+            document.body.style.backgroundImage = "url('/lobo.jpg')"
+
+        }
+    </script>
+</body>
+</html>
